@@ -1,0 +1,183 @@
+:root {
+    /* variables del tema oscuro */
+    --dark-neon-pink: #ff006e;
+    --dark-neon-blue: #00f5ff;
+    --dark-neon-purple: #8a2be2;
+    --dark-bg: #0a0a0a;
+    --dark-text: #ffffff;
+    --dark-card-bg: rgba(10, 10, 10, 0.8);
+    --dark-section-bg: rgba(20, 20, 20, 0.8);
+
+    /* variables del tema claro */
+    --light-primary: #2196f3;
+    --light-secondary: #e91e63;
+    --light-accent: #673ab7;
+    --light-bg: #ffffff;
+    --light-text: #333333;
+    --light-card-bg: rgba(255, 255, 255, 0.9);
+    --light-section-bg: rgba(240, 240, 240, 0.9);
+
+    /* variables tema por defecto (oscuro) */
+    --neon-pink: var(--dark-neon-pink);
+    --neon-blue: var(--dark-neon-blue);
+    --neon-purple: var(--dark-neon-purple);
+    --bg-color: var(--dark-bg);
+    --text-color: var(--dark-text);
+    --card-bg: var(--dark-card-bg);
+    --section-bg: var(--dark-section-bg);
+  }
+
+  /* clases del tema de luz */
+  body.light-theme {
+    --neon-pink: var(--light-secondary);
+    --neon-blue: var(--light-primary);
+    --neon-purple: var(--light-accent);
+    --bg-color: var(--light-bg);
+    --text-color: var(--light-text);
+    --card-bg: var(--light-card-bg);
+    --section-bg: var(--light-section-bg);
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Segoe UI", sans-serif;
+    transition: all 0.3s ease;
+    font-size: 24px;
+
+  }
+
+  .hero-section {
+    background: linear-gradient(
+      45deg,
+      var(--neon-purple),
+      var(--neon-blue)
+    );
+    padding: 150px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 50px,
+      rgba(0, 0, 0, 0.1) 50px,
+      rgba(0, 0, 0, 0.1) 51px
+    );
+  }
+
+  .section-title {
+    color: var(--neon-blue);
+    border-bottom: 2px solid var(--neon-pink);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+
+  .project-card {
+    background: var(--card-bg);
+    border: 1px solid var(--neon-blue);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px var(--neon-pink);
+    border-radius: 15px;
+    transition: all 0.5s; 
+    background-image: linear-gradient(to bottom left, #6a0dad, #9b2dff, #d946ef, #9b59b6, #5d6dff, #3b82f6); /* Gradiente de esquina superior derecha a esquina inferior izquierda */
+}
+
+  .social-icons a {
+    color: var(--neon-blue);
+    font-size: 24px;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: var(--neon-pink);
+    transform: scale(1.2);
+  }
+
+  .skill-badge {
+    background: var(--neon-purple);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  .animated-text {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--neon-blue);
+    }
+    to {
+      text-shadow: 0 0 20px var(--neon-pink), 0 0 30px var(--neon-pink);
+    }
+  }
+
+  .timeline {
+    border-left: 2px solid var(--neon-blue);
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--neon-pink);
+  }
+
+  /* estilos del cambio de tema */
+  .theme-switch {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  .theme-switch i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+
+  /* modificaciones del navbar */
+  .navbar-dark {
+    background-color: var(--card-bg) !important;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: var(--text-color);
+  }
+
+  .text-muted {
+    color: var(--text-color) !important;
+    opacity: 0.7;
+  }
+
+ 

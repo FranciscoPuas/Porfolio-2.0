@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+   <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand animated-text" style="font-size: 3rem; font-weight: bold;" href="#">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-3">
+              <a class="nav-link " href="#about">Sobre mí</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#experience">Experiencia</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#projects">Proyectos</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+            <li class="nav-item me-3">
+              <div class="theme-switch nav-link">
+                <i class="fas fa-moon"></i>
+                <div class="form-check form-switch d-inline-block">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="themeSwitch"
+                  />
+                </div>
+                <i class="fas fa-sun"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero seccion -->
+    <section class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold animate__animated animate__fadeIn" style="font-size: 7rem; font-weight: bold;">
+          Francisco Púas Villegas
+        </h1>
+        <p class="lead animate__animated animate__fadeIn animate__delay-1s" style="font-size: 5rem; font-weight: bold;">
+          <h2>Desarrollador Web Full Stack</h2>
+        </p>
+      </div>
+    </section>
+
+    <!-- Seccion sobre mi -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="row">
+          <div class="col-md-6 animate__animated animate__fadeInLeft">
+            <p>
+              Soy un desarrollador web enfocado en construir aplicaciones y
+              soluciones que destacan por su funcionalidad y rendimiento. Mi
+              experiencia abarca tanto el desarrollo frontend como backend,
+              trabajando con tecnologías como JavaScript, TypeScript, PHP, JWT,
+              Node.js, Express, LAravel y PostgreSQL. Con un enfoque en la optimización y el
+              diseño, he creado y mantenido APIs, y desarrollado interfaces web
+              efectivas, además de contribuir en proyectos de automatización y
+              gestión de datos. Me motiva trabajar en equipo para resolver
+              problemas complejos y mejorar la experiencia digital de los
+              usuarios.
+            </p>
+            <div class="mt-6">
+              <span class="skill-badge">HTML5</span>
+              <span class="skill-badge">CSS3</span>
+              <span class="skill-badge">Boostrap</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">C#</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">PHP</span>
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Express</span>
+              <span class="skill-badge">Ajax</span>
+              <span class="skill-badge">Sequelize</span>
+              <span class="skill-badge">JQuery</span>
+              <span class="skill-badge">Postgres</span>
+              <span class="skill-badge">MySQL</span>
+              <span class="skill-badge">JWT</span>
+              <span class="skill-badge">HBS</span>
+              <span class="skill-badge">GIT</span>
+            </div>
+          </div>
+          <div class="col-md-6 animate__animated animate__fadeInRight">
+            <img src="./img/img1.png" alt="Profile" class="img-fluid rounded" />
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Seccion de experiencia -->
+    <section id="experience" class="py-5" style="background-color: var(--section-bg)">
+      <div class="container">
+        <h2 class="section-title">Experiencia Laboral</h2>
+        <div class="timeline">
+          <div class="timeline-item animate__animated animate__fadeInUp">
+            <h4>Equip Collaboration - Desarrollador BackEnd</h4>
+            <p class="text-muted">08-2024 - 10-2024</p>
+            <p>
+                Desarrollador backend, enfocándose en la creación y mantenimiento de APIs con JavaScript y PostgreSQL, optimizando el rendimiento de bases de datos y realizando pruebas para asegurar la calidad del código.
+            </p>
+          </div>
+          <div class="timeline-item animate__animated animate__fadeInUp">
+            <h4>Liceo Alto Jahuel - Desarrollador FullStack</h4>
+            <p class="text-muted">04-2023 - 08-2024</p>
+            <p>
+                Desarrollo de un dashboard web utilizando HTML, JavaScript, CSS, PHP y SQL, contribuyendo en el diseño e implementación de esta herramienta clave para la gestión de información y seguimiento de métricas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion de educacion -->
+<section class="py-5" style="background-color: var(--section-bg)">
+    <div class="container">
+      <h2 class="section-title">Formación Académica</h2>
+      <div class="timeline">
+        <!-- Educación Formal -->
+        <div class="timeline-item animate__animated animate__fadeInUp">
+          <h3 class="mb-4" style="color: var(--neon-blue)">Educación</h3>
+          <div class="mb-4">
+            <h4>Analista Programador</h4>
+            <p class="text-muted">Instituto Profesional Los Leones - [2021 - 2023]</p>
+            <p>
+              Formación técnica especializada en desarrollo de software y
+              programación. Enfoque en tecnologías web y móviles.
+            </p>
+            <div class="mt-2">
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">C#</span>
+              <span class="skill-badge">PHP</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">CSS3</span>
+              <span class="skill-badge">.NET</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Cursos y Bootcamps -->
+        <div class="timeline-item animate__animated animate__fadeInUp">
+          <h3 class="mb-4" style="color: var(--neon-blue)">Cursos y Bootcamps</h3>
+          <div class="mb-4">
+            <h4>Bootcamp Desarrollador fullStack</h4>
+            <p class="text-muted">Desafío Latam SENCE - [2024]</p>
+            
+            <div class="mt-2">
+              <span class="skill-badge">HTML</span>
+              <span class="skill-badge">CSS</span>
+              <span class="skill-badge">Boostrap</span>
+              <span class="skill-badge">Javascript</span>
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Express</span>
+              <span class="skill-badge">Postgres</span>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h4>Capacitación Programación Javascript</h4>
+            <p class="text-muted">Fundación Telefónica- [2023]</p>
+            
+            <div class="mt-2">
+              <span class="skill-badge">Javascript</span>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h4>Introducción a la Programación Java</h4>
+            <p class="text-muted">Instituto de capacitación San Jose SENCE - [2018]</p>
+            <div class="mt-2">
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="experience" class="py-5" style="background-color: var(--section-bg)">
+    <div class="container">
+      <h2 class="section-title">En Curso</h2>
+      <div class="timeline">
+        <div class="timeline-item animate__animated animate__fadeInUp">
+          <h4>Curso React Udemy</h4>
+          <p class="text-muted">11-2024 - Actualidad</p>
+          <p>
+            Curso online de ReactJS, enfocado en la creación de interfaces de usuario y aplicaciones web.
+          </p>
+        </div>
+        </div>
+
+    <!-- Seccion d eproyectos -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Proyectos</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="project-card p-3">
+              <img
+                src="./img/Captura de pantalla 2024-10-25 123438.png"
+                alt="Project 1"
+                class="img-fluid mb-3"
+              />
+              <h4>POkedex</h4>
+              <p>pokedex usando la api publica de pokemon. Stack utilizado: HTML, CSS, JS, Bootstrap y JQuery</p>
+              <a href="https://github.com/FranciscoPuas/pokedex" class="btn btn-outline-info btn-lg">Ver más</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-card p-3">
+              <img
+                src=""
+                alt="Project 2"
+                class="img-fluid mb-3"
+              />
+              <h4>Proyecto 2</h4>
+              <p>Descripción del proyecto y tecnologías utilizadas.</p>
+              <a href="#" class="btn btn-outline-info btn-lg">Ver más</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-card p-3">
+              <img
+                src="/api/placeholder/350/200"
+                alt="Project 3"
+                class="img-fluid mb-3"
+              />
+              <h4>Proyecto 3</h4>
+              <p>Descripción del proyecto y tecnologías utilizadas.</p>
+              <a href="#" class="btn btn-outline-info btn-lg">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer/Contact Section -->
+    <footer
+      id="contact"
+      class="py-5"
+      style="background-color: var(--section-bg)"
+    >
+      <div class="container text-center">
+        <h2 class="section-title">Contacto</h2>
+        <div class="social-icons mb-4">
+          <a href="https://www.linkedin.com/in/francisco-puas/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/FranciscoPuas" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="mailto:francisco.puasv@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
