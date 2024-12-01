@@ -97,17 +97,18 @@
     background-image: linear-gradient(to bottom left, #6a0dad, #9b2dff, #d946ef, #9b59b6, #5d6dff, #3b82f6); /* Gradiente de esquina superior derecha a esquina inferior izquierda */
 }
 
-  .social-icons a {
-    color: var(--neon-blue);
-    font-size: 24px;
-    margin: 0 15px;
-    transition: all 0.3s ease;
-  }
+.social-icons a {
+  color: var(--neon-blue);
+  font-size: 24px;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
 
-  .social-icons a:hover {
-    color: var(--neon-pink);
-    transform: scale(1.2);
-  }
+.social-icons a:hover {
+  color: var(--neon-pink);
+  transform: scale(1.2);
+  text-shadow: 0 0 8px var(--neon-pink), 0 0 15px var(--neon-pink);
+}
 
   .skill-badge {
     background: var(--neon-purple);
