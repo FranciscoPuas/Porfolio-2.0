@@ -34,7 +34,5 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   window.addEventListener("scroll", animateOnScroll);
-  animateOnScroll(); 
+  animateOnScroll();
 });
-
-
